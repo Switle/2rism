@@ -1,0 +1,33 @@
+.hotels
+    padding: 60px 0
+    &__row
+        display: flex
+        justify-content: center
+        gap: 32px
+        @media ( max-width: 940px )
+            flex-wrap: wrap
+    .card
+        &__img
+            max-width: 320px
+            border-radius: 12px
+            overflow: hidden
+            margin-bottom: 10px
+            img
+                width: 100%
+        &__title
+            font-size: 16px
+            font-weight: 500
+            margin-bottom: 12px
+            color: #161414
+        &__info
+            display: flex
+            justify-content: space-between
+        &__location
+            color: #979797
+            &::before
+                font-family: icomoon
+                content: "\e907"
+                margin-right: 6px
+        &__star-rating
+            display: flex
+            gap: 2px

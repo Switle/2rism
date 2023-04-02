@@ -1,0 +1,98 @@
+.footer
+    background: #F9F9F9
+    padding: 120px 0
+    &__row
+        display: flex
+        justify-content: space-between
+        gap: 20px 30px
+    &__logo
+        margin-bottom: 16px
+        color: #161414
+
+.links
+    display: flex
+    gap: 20px 64px
+    &__title
+        font-size: 18px
+        font-weight: 500
+        margin-bottom: 20px
+    &__item
+        &:not(:last-child)
+            margin-bottom: 12px
+
+.description
+    max-width: 355px
+    &__text
+        margin-bottom: 32px
+    &__socials
+        display: flex
+        gap: 32px
+    &__social
+        width: 32px
+        height: 32px
+        display: flex
+        justify-content: center
+        align-items: center
+        &::before
+            font-size: 27px
+            line-height: 1
+            font-family: 'icomoon'
+            color: #5243C2
+        &:hover::before
+            color: #583ddf
+
+.facebook
+    &::before
+        content: "\e903"
+
+.twitter
+    &::before
+        content: "\e90d"
+
+.instagram
+    &::before
+        content: "\e906"
+
+.subscribe
+    max-width: 388px
+    &__title
+        font-size: 18px
+        font-weight: 500
+        margin-bottom: 20px
+    &__form
+        display: flex
+    &__label
+        flex: 1 1 auto
+        display: block
+        margin-right: 16px
+    &__button
+        width: 72px
+        height: 72px
+        &::before
+            font-family: 'icomoon'
+            content: "\e902"
+            color: #fff
+    &__placeholder
+        &::before
+            content: "\e909"
+            color: #ffa800
+
+@media ( max-width: 480px )
+    .footer
+        padding: 40px 0
+        &__row
+            flex-direction: column
+            align-items: center
+
+    .description
+        text-align: center
+        &__socials
+            justify-content: center
+
+    .links
+        flex-direction: column
+        &__title
+            font-size: 20px
+            margin-bottom: 16px
+        a
+            font-size: 16px

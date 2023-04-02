@@ -1,0 +1,89 @@
+.discover
+    padding: 262px 0 100px
+    text-align: center
+    background: url(../img/discover_bg.jpg) center (center/cover) no-repeat
+    &__title
+        font-size: 48px
+        font-weight: 600
+        color: #fff
+        margin-bottom: 32px
+    &__button
+        width: 273px
+        height: 72px
+        font-size: 18px
+        font-weight: 600
+        color: #fff
+        margin-bottom: 184px
+        &::before
+            content: "\e904"
+            margin-right: 10px
+    .form
+        max-width: 1140px
+        padding: 8px
+        border-radius: 12px
+        margin: 0 auto
+        display: flex
+        //display: table
+        background: #fff
+        text-align: left
+        &__button
+            width: 60px
+            height: 60px
+            &::after
+                content: "\e90c"
+                font-size: 20px
+    .label
+        //display: inline-block
+        white-space: nowrap
+
+.location
+    flex-basis: 300px
+    .placeholder
+        &::before
+            content: "\e904"
+            color: #FFA800
+
+.activity
+    .placeholder
+        &::before
+            content: "\e900"
+            color: #FFA800
+
+.when
+    .placeholder
+        &::before
+            content: "\e90e"
+            color: #FFA800
+
+.guests
+    .placeholder
+        &::before
+            content: "\e905"
+            color: #FFA800
+
+@media ( max-width: 480px )
+    .discover
+        padding: 150px 0 100px
+        &__title
+            font-size: 34px
+            font-weight: 600
+            color: #fff
+            margin-bottom: 26px
+        &__button
+            margin-bottom: 60px
+        .form
+            background: #00000083
+            flex-direction: column
+            justify-content: center
+            align-items: stretch
+        .label
+            flex: 1 1 auto
+            height: 70px
+            margin-bottom: 20px
+        .button
+            width: auto
+            align-self: center
+            padding: 0 10px
+            &__text
+                display: block
+                margin-right: 5px
