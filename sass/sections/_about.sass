@@ -1,25 +1,32 @@
 .about
-    padding: 60px 0 120px
+    padding: $sectionIndent 0 $sectionIndent
     &__row
-        display: flex
         justify-content: center
-        align-items: start
-        gap: 32px
+        align-items: center
     &__body
-        flex: 1 1 556px
+        min-width: 260px
         max-width: 556px
-        display: flex
-        flex-direction: column
-        gap: 32px
+        //padding: 86px 0 86px
+        margin-right: 16px
+    &__title
+        margin-bottom: 32px
+    &__text
+        margin-bottom: 32px
+        font-size: 16px
+        line-height: 2
     &__img
-        flex: 1 1 556px
+        min-width: 260px
         max-width: 556px
-        border-radius: 24px
+        border-radius: $additionalBorderRadius
         overflow: hidden
         img
             width: 100%
-    @media ( max-width: 900px )
-        &__row
-            flex-wrap: wrap
-        &__body
-            align-items: center
+    @media ( max-width: 992px )
+        &
+            &__row
+                flex-direction: column
+            &__body
+                margin: 0
+                margin-bottom: 32px
+    @media ( max-width: 992px )
+        padding: $sectionIndent/2 0 $sectionIndent/2

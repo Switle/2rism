@@ -1,63 +1,25 @@
 .travel
-    padding: 60px 0
+    padding-top: $sectionIndent
     &__row
-        display: flex
+        margin: -16px
         justify-content: center
-        gap: 32px
-    @media ( max-width: 1120px )
-        &__title-row
-            justify-content: center
-            gap: 32px
+    &__col
+        padding: 16px
+    &__card
+        height: 100%
+    @media ( max-width: 1200px )
         &__row
             flex-wrap: wrap
-
-    .card
-        max-width: 672px
-        display: flex
-        gap: 32px
-        &__img
-            max-width: 320px
-            //min-width: 245px
-            max-height: 380px
-            border-radius: 24px
-            overflow: hidden
-            align-self: start
-            img
-                width: 100%
-        &__body
-            display: flex
-            flex-direction: column
-        &__title
-            font-size: 20px
-            font-weight: 600
-            color: #161414
-            margin-bottom: 16px
-        &__text
-            margin-bottom: auto
-            max-width: 400px
-            max-height: 300px
-            overflow: auto
-        &__info
-            display: flex
-            gap: 26px
-            font-size: 12px
-            color: #878787
-        &__date, &__user, &__message
-            &::before
-                font-family: icomoon
-                margin-right: 6px
-        &__date
-            &::before
-                content: "\e90e"
-        &__user
-            &::before
-                content: "\e90b"
-        &__message
-            &::before
-                content: "\e90a"
-        @media ( max-width: 640px )
-            flex-direction: column
-            justify-content: center
+    @media ( max-width: 768px )
+        &
+            padding-top: $sectionIndent/2
+    @media ( max-width: 576px )
+        &__row
             align-items: center
-        &__img
-            align-self: initial
+        &__card
+            flex-direction: column
+            align-items: center
+        & .card__img
+            margin-right: 0
+            margin: 0 auto
+            margin-bottom: 16px

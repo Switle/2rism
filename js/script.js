@@ -1,10 +1,17 @@
 function burger() {
-    const burger = document.querySelector('.burger');
+    function toggleActiveClass(element) {
+        element.classList.toggle('active');
+    }
+
     const menu = document.querySelector('.menu');
-    burger.addEventListener('click', () => {
-        burger.classList.toggle('active');
-        menu.classList.toggle('active');
-    });
+    const burger = document.querySelector('.burger');
+
+    function toggleActiveClassMenu() {
+        toggleActiveClass(menu);
+        toggleActiveClass(burger);
+    }
+
+    burger.addEventListener('click', toggleActiveClassMenu);
 }
 
 burger();

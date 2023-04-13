@@ -1,33 +1,18 @@
 .destinations
-    padding: 120px 0 60px
-    @media ( max-width: 480px )
-        padding: 60px 0
-    &__title
-        margin-bottom: 64px
+    padding-top: $sectionIndent
     &__row
-        display: flex
         justify-content: center
-        flex-wrap: no-wrap
-        gap: 32px
-        @media ( max-width: 940px )
-            flex-wrap: wrap
-    .card
-        &__img
-            max-width: 203px
-            //height: 181px
-            border-radius: 12px
-            overflow: hidden
-            margin-bottom: 8px
-            img
-                width: 100%
-        &__title
-            font-size: 16px
-            font-weight: 500
-            color: #161414
-        &__location
-            color: #979797
-
-/* @media ( max-width: 940px )
- .destinations
- &__row
- flex-wrap: wrap */
+        margin: -16px
+    &__card
+        padding: 16px
+    @media ( max-width: 992px )
+        &
+            &__row
+                flex-wrap: wrap
+            &__card
+                //flex: 1 1 33%
+    @media ( max-width: 768px )
+        &
+            padding-top: $sectionIndent/2
+            &__card
+                //flex: 1 1 25%

@@ -13,9 +13,9 @@
     <div class="wrapper">
         <header class="header">
             <div class="container">
-                <div class="header__wrapper">
-                    <h1 class="logo header__logo">2rism</h1>
-                    <nav class="menu header__menu">
+                <div class="row header__row">
+                    <h1 class="logo">2rism</h1>
+                    <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__item"><a href="#discover">Home</a></li>
                             <li class="menu__item"><a href="#hotels">Hotels</a></li>
@@ -26,10 +26,10 @@
                             <li class="menu__item"><a href="#footer">Contact</a></li>
                         </ul>
                     </nav>
-                    <div class="user header__user">
-                        <div class="user__data">
-                            <div class="user__hola">Holla,</div>
-                            <div class="user__name">Ales Nesetril</div>
+                    <div class="user">
+                        <div class="user__greeting">
+                            <p class="user__holla">Holla,</p>
+                            <p class="user__name">Ales Nesetril</p>
                         </div>
                         <div class="user__avatar">
                             <img src="img/user_avatar.jpg" alt="user avatar">
@@ -42,45 +42,47 @@
                 </div>
             </div>
         </header>
+
         <main class="content">
             <section class="discover" id="discover">
                 <div class="container">
-                    <h2 class="discover__title">
-                        Discover the most engaging places
-                    </h2>
-                    <button class="button discover__button">
-                        Discover on 3D Globe
-                    </button>
+                    <h2 class="title discover__title">Discover the most engaging places</h2>
+                    <button class="button discover__button">Discover on 3D Globe</button>
+
                     <form action="" class="form discover__form">
-                        <label for="" class="label location">
-                            <input type="text" class="input" placeholder=" ">
+                        <label for="location-input" class="label location">
+                            <input type="text" class="input" id="location-input" placeholder=" ">
                             <div class="placeholder">
-                                <p class="placeholder__label">Location</p>
-                                <p class="placeholder__prompt">Explore nearby destinations</p>
+                                <div class="placeholder__label">Location</div>
+                                <div class="placeholder__prompt">Explore nearby destinations</div>
                             </div>
                         </label>
-                        <label for="" class="label activity">
-                            <input type="text" class="input" placeholder=" ">
+
+                        <label for="activity-input" class="label activity">
+                            <input type="text" class="input" id="activity-input" placeholder=" ">
                             <div class="placeholder">
-                                <p class="placeholder__label">Activity</p>
-                                <p class="placeholder__prompt">All Activities</p>
+                                <div class="placeholder__label">Activity</div>
+                                <div class="placeholder__prompt">All Activities</div>
                             </div>
                         </label>
-                        <label for="" class="label when">
-                            <input type="text" class="input" placeholder=" ">
+
+                        <label for="when-input" class="label when">
+                            <input type="text" class="input" id="when-input" placeholder=" ">
                             <div class="placeholder">
-                                <p class="placeholder__label">When</p>
-                                <p class="placeholder__prompt">Choose a Date</p>
+                                <div class="placeholder__label">When</div>
+                                <div class="placeholder__prompt">Choose a Date</div>
                             </div>
                         </label>
-                        <label for="" class="label guests">
-                            <input type="text" class="input" placeholder=" ">
+
+                        <label for="guests-input" class="label guests">
+                            <input type="text" class="input" id="guests-input" placeholder=" ">
                             <div class="placeholder">
-                                <p class="placeholder__label">Guests</p>
-                                <p class="placeholder__prompt">1 guest</p>
+                                <div class="placeholder__label">Guests</div>
+                                <div class="placeholder__prompt">1 guest</div>
                             </div>
                         </label>
-                        <button class="button form__button"><span class="button__text">Search</span></button>
+
+                        <button class="button form__button"><span>Search</span></button>
                     </form>
                 </div>
             </section>
@@ -88,159 +90,132 @@
                 <div class="container">
                     <h2 class="title destinations__title">Popular Destinations</h2>
                     <div class="row destinations__row">
-                        <div class="card destintions__card">
-                            <div class="card__img"><img src="img/destinations1.jpg" alt=""></div>
+                        <div class="card destinations__card">
+                            <div class="card__img">
+                                <img src="img/destinations1.jpg" alt="">
+                            </div>
                             <h3 class="card__title">Big Sur</h3>
-                            <div class="card__location">California, USA</div>
+                            <p class="card__location">California, USA</p>
                         </div>
-                        <div class="card destintions__card">
-                            <div class="card__img"><img src="img/destinations2.jpg" alt=""></div>
+
+                        <div class="card destinations__card">
+                            <div class="card__img">
+                                <img src="img/destinations2.jpg" alt="">
+                            </div>
                             <h3 class="card__title">Prescott</h3>
-                            <div class="card__location">Arizona, USA</div>
+                            <p class="card__location">Arizona, USA</p>
                         </div>
-                        <div class="card destintions__card">
-                            <div class="card__img"><img src="img/destinations3.jpg" alt=""></div>
+
+                        <div class="card destinations__card">
+                            <div class="card__img">
+                                <img src="img/destinations3.jpg" alt="">
+                            </div>
                             <h3 class="card__title">Fort Mayers</h3>
-                            <div class="card__location">Florida, USA</div>
+                            <p class="card__location">Florida, USA</p>
                         </div>
-                        <div class="card destintions__card">
-                            <div class="card__img"><img src="img/destinations4.jpg" alt=""></div>
+
+                        <div class="card destinations__card">
+                            <div class="card__img">
+                                <img src="img/destinations4.jpg" alt="">
+                            </div>
                             <h3 class="card__title">Tucson</h3>
-                            <div class="card__location">Tucson</div>
+                            <p class="card__location">Arizona, USA</p>
                         </div>
-                        <div class="card destintions__card">
-                            <div class="card__img"><img src="img/destinations5.jpg" alt=""></div>
+
+                        <div class="card destinations__card">
+                            <div class="card__img">
+                                <img src="img/destinations5.jpg" alt="">
+                            </div>
                             <h3 class="card__title">St. Joseph</h3>
-                            <div class="card__location">Michigan, USA</div>
+                            <p class="card__location">Michigan, USA</p>
                         </div>
-                        <div class="card destintions__card">
-                            <div class="card__img"><img src="img/destinations6.jpg" alt=""></div>
+
+                        <div class="card destinations__card">
+                            <div class="card__img">
+                                <img src="img/destinations6.jpg" alt="">
+                            </div>
                             <h3 class="card__title">Madrid</h3>
-                            <div class="card__location">Spain</div>
+                            <p class="card__location">Spain</p>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="hotels" id="hotels">
                 <div class="container">
-                    <div class="title-row hotels__title-row">
+                    <div class="title-row">
                         <h2 class="title hotels__title">Hotels and Restaurants</h2>
-                        <button class="button view-all">View all</button>
+                        <button class="more-button hotels__button">View all</button>
                     </div>
                     <div class="row hotels__row">
-                        <div class="card hotels__card">
-                            <div class="card__img"><img src="img/hotels1.jpg" alt=""></div>
-                            <h3 class="card__title">Monastero Santa Rosa Hotel & Spa</h3>
-                            <div class="card__info">
-                                <div class="card__location">Salerno, Italy</div>
-                                <div class="card__star-rating">
-                                    <svg class="star-rating fill">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
-                                    <svg class="star-rating fill">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
-                                    <svg class="star-rating fill">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
-                                    <svg class="star-rating fill">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
-                                    <svg class="star-rating fill">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
+                        <div class="col hotels__col">
+                            <div class="card hotels__card">
+                                <div class="card__img">
+                                    <img src="img/hotels1.jpg" alt="">
+                                </div>
+                                <h3 class="card__title">Monastero Santa Rosa Hotel & Spa</h3>
+                                <div class="card__bottom">
+                                    <p class="card__location">Salerno, Italy</p>
+                                    <div class="card__star-rating">
+                                        <div class="star fill"></div>
+                                        <div class="star fill"></div>
+                                        <div class="star fill"></div>
+                                        <div class="star fill"></div>
+                                        <div class="star fill"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card hotels__card">
-                            <div class="card__img"><img src="img/hotels2.jpg" alt=""></div>
-                            <h3 class="card__title">Grand Hotel Tremezzo</h3>
-                            <div class="card__info">
-                                <div class="card__location">Lake Como, Italy</div>
-                                <div class="card__star-rating">
-                                    <svg class="star-rating fill">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
-                                    <svg class="star-rating fill">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
-                                    <svg class="star-rating fill">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
-                                    <svg class="star-rating">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
-                                    <svg class="star-rating">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
+                        <div class="col hotels__col">
+                            <div class="card hotels__card">
+                                <div class="card__img">
+                                    <img src="img/hotels2.jpg" alt="">
+                                </div>
+                                <h3 class="card__title">Grand Hotel Tremezzo</h3>
+                                <div class="card__bottom">
+                                    <p class="card__location">Lake Como, Italy</p>
+                                    <div class="card__star-rating">
+                                        <div class="star fill"></div>
+                                        <div class="star fill"></div>
+                                        <div class="star fill"></div>
+                                        <div class="star fill"></div>
+                                        <div class="star fill"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card hotels__card">
-                            <div class="card__img"><img src="img/hotels3.jpg" alt=""></div>
-                            <h3 class="card__title">The Oberoi Udaivilas, Udaipur</h3>
-                            <div class="card__info">
-                                <div class="card__location">Udaipur, India</div>
-                                <div class="card__star-rating">
-                                    <svg class="star-rating fill">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
-                                    <svg class="star-rating fill">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
-                                    <svg class="star-rating fill">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
-                                    <svg class="star-rating fill">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
-                                    <svg class="star-rating">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
+                        <div class="col hotels__col">
+                            <div class="card hotels__card">
+                                <div class="card__img">
+                                    <img src="img/hotels3.jpg" alt="">
+                                </div>
+                                <h3 class="card__title">The Oberoi Udaivilas, Udaipur</h3>
+                                <div class="card__bottom">
+                                    <p class="card__location">Udaipur, India</p>
+                                    <div class="card__star-rating">
+                                        <div class="star fill"></div>
+                                        <div class="star fill"></div>
+                                        <div class="star fill"></div>
+                                        <div class="star fill"></div>
+                                        <div class="star fill"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card hotels__card">
-                            <div class="card__img"><img src="img/hotels4.jpg" alt=""></div>
-                            <h3 class="card__title">AKA Beverly Hills</h3>
-                            <div class="card__info">
-                                <div class="card__location">Los Angeles, United States</div>
-                                <div class="card__star-rating">
-                                    <svg class="star-rating fill">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
-                                    <svg class="star-rating fill">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
-                                    <svg class="star-rating fill">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
-                                    <svg class="star-rating">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
-                                    <svg class="star-rating">
-                                        <path
-                                            d="M8.00002 12.1733L3.29802 14.8053L4.34802 9.51992L0.391357 5.86125L5.74269 5.22659L8.00002 0.333252L10.2574 5.22659L15.6087 5.86125L11.652 9.51992L12.702 14.8053L8.00002 12.1733Z" />
-                                    </svg>
+                        <div class="col hotels__col">
+                            <div class="card hotels__card">
+                                <div class="card__img">
+                                    <img src="img/hotels4.jpg" alt="">
+                                </div>
+                                <h3 class="card__title">AKA Beverly Hills</h3>
+                                <div class="card__bottom">
+                                    <p class="card__location">Los Angeles, United States</p>
+                                    <div class="card__star-rating">
+                                        <div class="star fill"></div>
+                                        <div class="star fill"></div>
+                                        <div class="star fill"></div>
+                                        <div class="star fill"></div>
+                                        <div class="star fill"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -249,40 +224,50 @@
             </section>
             <section class="travel" id="travel">
                 <div class="container">
-                    <div class="title-row travel__title-row">
-                        <h2 class="title hotels__title">Travel Tips and Advice</h2>
-                        <button class="button view-all">View all</button>
+                    <div class="title-row">
+                        <h2 class="title travel__title">Travel Tips and Advice</h2>
+                        <button class="more-button">View all</button>
                     </div>
                     <div class="row travel__row">
-                        <div class="card travel__card">
-                            <div class="card__img"><img src="img/travel1.jpg" alt=""></div>
-                            <div class="card__body">
-                                <h3 class="card__title">East Village Ice Cream Crawl</h3>
-                                <div class="card-text card__text">
-                                    We will stop at five different world-class ice cream shops on
-                                    this 1.5 mile 1.5 hour tour. At each ice cream store we'll explore the story behind
-                                    the business and see what makes the ice cream unique as you savor every…
+                        <div class="col travel__col">
+                            <div class="card travel__card">
+                                <div class="card__img">
+                                    <img src="img/travel1.jpg" alt="">
                                 </div>
-                                <div class="card__info">
-                                    <div class="card__date">Today</div>
-                                    <div class="card__user">Maria Philips</div>
-                                    <div class="card__message">2</div>
+                                <div class="card__body">
+                                    <h3 class="card__title">East Village Ice Cream Crawl</h3>
+                                    <p class="card__text">
+                                        We will stop at five different world-class ice cream shops on this 1.5 mile 1.5
+                                        hour tour. At each ice cream
+                                        store we'll explore the story behind the business and see what makes the ice
+                                        cream unique as you savor
+                                        every…
+                                    </p>
+                                    <div class="card__bottom">
+                                        <div class="card__date">Today</div>
+                                        <div class="card__person">Maria Philips</div>
+                                        <div class="card__messages">2</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card travel__card">
-                            <div class="card__img"><img src="img/travel2.jpg" alt=""></div>
-                            <div class="card__body">
-                                <h3 class="card__title">Brooklyn Bridge cinematic photo walk</h3>
-                                <div class="card-text card__text">
-                                    This experience takes place at the Brooklyn Bridge Park and Brooklyn Bridge, but I’m
-                                    always open to capture clients at different locations upon request for an additional
-                                    charge.
+                        <div class="col travel__col">
+                            <div class="card travel__card">
+                                <div class="card__img">
+                                    <img src="img/travel2.jpg" alt="">
                                 </div>
-                                <div class="card__info">
-                                    <div class="card__date">Today</div>
-                                    <div class="card__user">James Calzoni</div>
-                                    <div class="card__message">17</div>
+                                <div class="card__body">
+                                    <h3 class="card__title">EBrooklyn Bridge cinematic photo walk</h3>
+                                    <p class="card__text">
+                                        This experience takes place at the Brooklyn Bridge Park and Brooklyn Bridge, but
+                                        I’m always open to capture clients at different locations upon request for an
+                                        additional charge.
+                                    </p>
+                                    <div class="card__bottom">
+                                        <div class="card__date">Today</div>
+                                        <div class="card__person">Maria Philips</div>
+                                        <div class="card__messages">2</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -291,26 +276,42 @@
             </section>
             <section class="activities" id="activities">
                 <div class="container">
-                    <div class="title-row travel__title-row">
-                        <h2 class="title hotels__title">Travel Tips and Advice</h2>
-                        <button class="button view-all">View all</button>
+                    <div class="title-row">
+                        <h2 class="title activities__title">Activities</h2>
+                        <button class="more-button">View all</button>
                     </div>
                     <div class="row activities__row">
-                        <div class="card activities__card">
-                            <div class="card__img"><img src="img/activities1.jpg" alt=""></div>
-                            <h3 class="card__title">Sailing</h3>
+                        <div class="col activities__col">
+                            <div class="card activities__card">
+                                <div class="card__img">
+                                    <img src="img/activities1.jpg" alt="">
+                                </div>
+                                <h3 class="card__title">Sailing</h3>
+                            </div>
                         </div>
-                        <div class="card activities__card">
-                            <div class="card__img"><img src="img/activities2.jpg" alt=""></div>
-                            <h3 class="card__title">Climbing</h3>
+                        <div class="col activities__col">
+                            <div class="card activities__card">
+                                <div class="card__img">
+                                    <img src="img/activities2.jpg" alt="">
+                                </div>
+                                <h3 class="card__title">Climbing</h3>
+                            </div>
                         </div>
-                        <div class="card activities__card">
-                            <div class="card__img"><img src="img/activities3.jpg" alt=""></div>
-                            <h3 class="card__title">Skiing</h3>
+                        <div class="col activities__col">
+                            <div class="card activities__card">
+                                <div class="card__img">
+                                    <img src="img/activities3.jpg" alt="">
+                                </div>
+                                <h3 class="card__title">Skiing</h3>
+                            </div>
                         </div>
-                        <div class="card activities__card">
-                            <div class="card__img"><img src="img/activities4.jpg" alt=""></div>
-                            <h3 class="card__title">Hiking</h3>
+                        <div class="col activities__col">
+                            <div class="card activities__card">
+                                <div class="card__img">
+                                    <img src="img/activities4.jpg" alt="">
+                                </div>
+                                <h3 class="card__title">Hiking</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -319,75 +320,71 @@
                 <div class="container">
                     <div class="row about__row">
                         <div class="about__body">
-                            <h2 class="title about__title">About Us</h2>
-                            <div class="card-text about__text">
+                            <h2 class="title about__title">About</h2>
+                            <p class="about__text">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a sapien justo.
                                 Nulla facilisis tristique imperdiet. Nullam a placerat odio. Sed in ex augue. Aliquam
                                 porta consectetur lorem sit amet ultrices. Class aptent taciti sociosqu ad litora
                                 torquent per conubia nostra, per inceptos himenaeos.
-                            </div>
-                            <button class="button view-all">Read more</button>
+                            </p>
+                            <button class="more-button about__button">Read more</button>
                         </div>
-                        <div class="about__img">
-                            <img src="img/about.jpg" alt="">
-                        </div>
+                        <div class="about__img"><img src="img/about.jpg" alt=""></div>
                     </div>
                 </div>
             </section>
         </main>
+
         <footer class="footer" id="footer">
             <div class="container">
-                <div class="footer__row">
-                    <div class="footer__col description">
+                <div class="row footer__row">
+                    <div class="description footer__description">
                         <h2 class="logo footer__logo">2rism</h2>
                         <div class="description__text">
-                            We always make our customers happy by providing as many choices as possible
+                            We always make our customers happy by providing as many choises as possible
                         </div>
-                        <div class="description__socials">
-                            <a href="" class="description__social facebook"></a>
-                            <a href="" class="description__social twitter"></a>
-                            <a href="" class="description__social instagram"></a>
+                        <div class="socials description__socials">
+                            <a href="" class="social facebook"></a>
+                            <a href="" class="social twitter"></a>
+                            <a href="" class="social instagram"></a>
                         </div>
                     </div>
-                    <div class="footer__col">
-                        <nav class="links footer__links">
-                            <ul class="links__list">
-                                <h3 class="links__title">About</h3>
-                                <li class="links__item"><a href="">About Us</a></li>
-                                <li class="links__item"><a href="">Features</a></li>
-                                <li class="links__item"><a href="">News</a></li>
-                                <li class="links__item"><a href="">Menu</a></li>
-                            </ul>
-                            <ul class="links__list">
-                                <h3 class="links__title">Company</h3>
-                                <li class="links__item"><a href="">Why 2rism</a></li>
-                                <li class="links__item"><a href="">Partner With Us</a></li>
-                                <li class="links__item"><a href="">FAQ</a></li>
-                                <li class="links__item"><a href="">Blog</a></li>
-                            </ul>
-                            <ul class="links__list">
-                                <h3 class="links__title">Support</h3>
-                                <li class="links__item"><a href="">Account</a></li>
-                                <li class="links__item"><a href="">Support Center</a></li>
-                                <li class="links__item"><a href="">Feedback</a></li>
-                                <li class="links__item"><a href="">Contact Us</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="footer__col subscribe">
-                        <h3 class="subscribe__title">
-                            Subscribe on our destination review newsletters
-                        </h3>
-                        <form action="" class="form subscribe__form">
-                            <label for="subscribe-form" class="label subscribe__label">
-                                <input type="email" class="input subscribe__input" id="subscribe-form" placeholder=" ">
-                                <div class="placeholder subscribe__placeholder">
-                                    <p class="placeholder__label">Your Email</p>
-                                    <p class="placeholder__prompt">johndoe@gmail.com</p>
+                    <nav class="menu footer__menu">
+                        <ul class="menu__list">
+                            <h3 class="footer__title">About</h3>
+                            <li class="menu__item"><a href="">About Us</a></li>
+                            <li class="menu__item"><a href="">Features</a></li>
+                            <li class="menu__item"><a href="">News</a></li>
+                            <li class="menu__item"><a href="">Menu</a></li>
+                        </ul>
+                        <ul class="menu__list">
+                            <h3 class="footer__title">Company</h3>
+                            <li class="menu__item"><a href="">Why 2rism</a></li>
+                            <li class="menu__item"><a href="">Partner With Us</a></li>
+                            <li class="menu__item"><a href="">FAQ</a></li>
+                            <li class="menu__item"><a href="">Blog</a></li>
+                        </ul>
+                        <ul class="menu__list">
+                            <h3 class="footer__title">Support</h3>
+                            <li class="menu__item"><a href="">Account</a></li>
+                            <li class="menu__item"><a href="">Support Center</a></li>
+                            <li class="menu__item"><a href="">Feedback</a></li>
+                            <li class="menu__item"><a href="">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="subscribe footer__subscribe">
+                        <h3 class="footer__title">Subscribe on our destination review newsletters</h3>
+                        <div class="form subscribe_form">
+                            <label for="activity-input" class="label">
+                                <input type="text" class="input" id="activity-input" placeholder=" ">
+                                <div class="placeholder">
+                                    <div class="placeholder__label">Activity</div>
+                                    <div class="placeholder__prompt">All Activities</div>
                                 </div>
                             </label>
-                            <button class="button subscribe__button"></button>
-                        </form>
+                            <button class="button form__button"></button>
+                        </div>
+
                     </div>
                 </div>
             </div>

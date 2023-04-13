@@ -1,0 +1,44 @@
+.label
+    display: inline-block
+    height: 72px
+    position: relative
+    text-align: left
+    &:hover .placeholder__prompt
+        display: block
+
+.input
+    height: 100%
+    width: 100%
+    background: #fff
+    border-radius: $primaryBorderRadius
+    padding: 20px
+    font-size: 16px
+    &:focus, &:not(:placeholder-shown)
+        & + .placeholder
+            display: none
+
+.placeholder
+    position: absolute
+    top: 50%
+    left: 56px
+    transform: translateY(-50%)
+    pointer-events: none
+    &::before
+        font-family: icomoon
+        color: #FFA800
+        content: "\e907"
+        position: absolute
+        left: -19px
+        top: 50%
+        transform: translate(-100%, -50%)
+    &__label
+        font-size: 14px
+        font-weight: 300
+    &__prompt
+        display: none
+        font-size: 16px
+        font-weight: 500
+        color: $titlesColor
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis

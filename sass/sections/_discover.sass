@@ -1,89 +1,83 @@
 .discover
-    padding: 262px 0 100px
+    padding: 260px 0 100px
+    background: url('../img/discover_bg.jpg') center (center/cover) no-repeat
     text-align: center
-    background: url(../img/discover_bg.jpg) center (center/cover) no-repeat
     &__title
         font-size: 48px
         font-weight: 600
         color: #fff
         margin-bottom: 32px
     &__button
-        width: 273px
         height: 72px
+        padding: 0 25px
+        margin-bottom: 184px
         font-size: 18px
         font-weight: 600
-        color: #fff
-        margin-bottom: 184px
         &::before
             content: "\e904"
+            font-weight: initial
             margin-right: 10px
+
     .form
-        max-width: 1140px
-        padding: 8px
-        border-radius: 12px
-        margin: 0 auto
+        padding: 8px 14px
         display: flex
-        //display: table
+        align-items: center
         background: #fff
-        text-align: left
+        border-radius: $primaryBorderRadius
         &__button
-            width: 60px
             height: 60px
+            width: 60px
+            flex-shrink: 0
             &::after
                 content: "\e90c"
-                font-size: 20px
+                font-size: 24px
+            span
+                display: none
+                font-size: 18px
+                font-weight: 600
+
     .label
-        //display: inline-block
-        white-space: nowrap
+        flex: 1 1 auto
 
-.location
-    flex-basis: 300px
-    .placeholder
-        &::before
-            content: "\e904"
-            color: #FFA800
-
-.activity
-    .placeholder
-        &::before
-            content: "\e900"
-            color: #FFA800
-
-.when
-    .placeholder
-        &::before
-            content: "\e90e"
-            color: #FFA800
-
-.guests
-    .placeholder
-        &::before
-            content: "\e905"
-            color: #FFA800
-
-@media ( max-width: 480px )
-    .discover
-        padding: 150px 0 100px
-        &__title
-            font-size: 34px
-            font-weight: 600
-            color: #fff
-            margin-bottom: 26px
-        &__button
-            margin-bottom: 60px
-        .form
-            background: #00000083
-            flex-direction: column
-            justify-content: center
-            align-items: stretch
-        .label
-            flex: 1 1 auto
-            height: 70px
-            margin-bottom: 20px
-        .button
-            width: auto
-            align-self: center
-            padding: 0 10px
-            &__text
-                display: block
-                margin-right: 5px
+    .location
+        //flex: 1 1 300px
+        .placeholder
+            &::before
+                content: "\e907"
+    .activity
+        .placeholder
+            &::before
+                content: "\e900"
+    .when
+        .placeholder
+            &::before
+                content: "\e90e"
+    .guests
+        .placeholder
+            &::before
+                content: "\e905"
+    @media ( max-width: 992px )
+        &
+            padding: 160px 0 100px
+            &__title
+                font-size: 34px
+            &__button
+                margin-bottom: 100px
+            .form
+                flex-wrap: wrap
+                justify-content: center
+                &__button
+                    width: auto
+                    padding: 0 20px
+                span
+                    display: block
+                    margin-right: 10px
+            .label
+                flex: 1 1 50%
+    @media ( max-width: 576px )
+        &
+            padding: 120px 0 80px
+            &__button
+                margin-bottom: 80px
+            .label
+                flex: 1 1 100%

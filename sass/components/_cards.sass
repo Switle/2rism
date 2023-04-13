@@ -1,0 +1,165 @@
+//Hotels card
+
+.hotels
+    & .card
+        min-width: 260px
+        max-width: 320px
+        padding-bottom: 66px
+        position: relative
+        overflow: hidden
+        &__img
+            width: 100%
+            margin-bottom: 10px
+            border-radius: $primaryBorderRadius
+            overflow: hidden
+            img
+                width: 100%
+        &__title
+            max-width: 100%
+            font-size: 16px
+            font-weight: 500
+            color: $titlesColor
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+            position: absolute
+        &__bottom
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 100%
+            display: flex
+            justify-content: space-between
+        &__location
+            font-size: 13px
+            color: $cardBottomText
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+            &::before
+                font-family: icomoon
+                content: "\e907"
+                margin-right: 6px
+        &__star-rating
+            display: flex
+            justify-content: end
+            align-items: center
+            margin: 0 -1px
+
+.star
+    padding: 0 1px
+    font-family: star
+    color: #FFA800
+    display: flex
+    justify-content: center
+    align-items: center
+    &::before
+        content: "\e900"
+    &.fill
+        &::before
+            content: "\e901"
+
+//Hotels card
+
+//Destinations card
+
+.destinations
+    & .card
+        min-width: 180px
+        max-width: 203px
+        &__img
+            width: 100%
+            border-radius: $primaryBorderRadius
+            overflow: hidden
+            margin-bottom: 8px
+            img
+                width: 100%
+        &__title
+            font-size: 16px
+            font-weight: 500
+            color: $titlesColor
+        &__location
+            font-size: 13px
+            color: $cardBottomText
+
+//Destinations card
+
+//Travel card
+
+.travel
+    & .card
+        min-width: 260px
+        max-width: 672px
+        display: flex
+        &__img
+            align-self: start
+            min-width: 240px
+            max-width: 320px
+            border-radius: $additionalBorderRadius
+            overflow: hidden
+            margin-right: 32px
+            img
+                width: 100%
+        &__body
+            min-width: 240px
+            max-width: 320px
+            padding-bottom: 32px
+            position: relative
+        &__title
+            font-size: 20px
+            font-weight: 600
+            margin-bottom: 16px
+            color: $titlesColor
+        &__text
+            font-size: 16px
+            line-height: 2
+            color: $primaryTextColor
+        &__bottom
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 100%
+            display: flex
+            justify-content: start
+            font-size: 13px
+            color: $cardBottomText
+            & > *:not(:last-child)
+                margin-right: 25px
+        &__date
+            &::before
+                font-family: icomoon
+                content: "\e907"
+                margin-right: 6px
+        &__person
+            &::before
+                font-family: icomoon
+                content: "\e90b"
+                margin-right: 6px
+        &__messages
+            &::before
+                font-family: icomoon
+                content: "\e90a"
+                margin-right: 6px
+
+//Travel card
+
+//Activities card
+
+.activities
+    & .card
+        min-width: 200px
+        max-width: 320px
+        &__img
+            width: 100%
+            border-radius: $primaryBorderRadius
+            overflow: hidden
+            margin-bottom: 16px
+            img
+                width: 100%
+        &__title
+            font-size: 20px
+            font-weight: 600
+            margin-bottom: 16px
+            color: $titlesColor
+
+//Activities card
