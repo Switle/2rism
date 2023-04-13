@@ -123,12 +123,9 @@ body {
   display: none;
 }
 
-@media (hover: none) {
-  *:hover {
-    pointer-events: none;
-  }
-}
-
+/* @media ( hover: none )
+ *:hover
+ pointer-events: none */
 .logo {
   display: inline-block;
   font-size: 25px;
