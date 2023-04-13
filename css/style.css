@@ -78,6 +78,10 @@ input, textarea, button {
   font-family: inherit;
 }
 
+::-ms-clear {
+  display: none;
+}
+
 html, body {
   height: 100%;
 }
@@ -264,6 +268,18 @@ body {
   border-radius: 12px;
   padding: 20px;
   font-size: 16px;
+}
+
+.input:not(:focus) + .placeholder {
+  display: block;
+}
+
+.input:not(:-ms-input-placeholder) + .placeholder {
+  display: none;
+}
+
+.input:-ms-input-placeholder + .placeholder {
+  display: block;
 }
 
 .input:focus + .placeholder, .input:not(:placeholder-shown) + .placeholder {
