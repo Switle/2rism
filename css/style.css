@@ -427,6 +427,7 @@ body {
 }
 .discover__button::before {
   margin-right: 8px;
+  background-image: url(../icons/globe.svg);
 }
 
 .discover-form {
