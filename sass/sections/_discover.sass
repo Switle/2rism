@@ -1,0 +1,69 @@
+.discover
+    padding: 260px 0 100px
+    border-radius: 0 0 3.5vw 3.5vw
+    background: #100c20 url('../img/discover/discover-bg.jpg') center (center/cover) no-repeat
+    @media ( max-width: 767px )
+       padding: 160px 0 60px 
+    &__body
+        text-align: center
+        margin-bottom: 184px
+        @media ( max-width: 767px )
+            margin-bottom: 70px
+    &__title
+        margin-bottom: 32px
+        font-size: 48px
+        font-weight: 600
+        color: #fff
+        @media ( max-width: 575px )
+            font-size: 40px
+        @media ( max-width: 359px )
+            font-size: 30px
+    &__button
+        padding: 24px
+        font-weight: 600
+        &::before
+            margin-right: 8px
+
+.discover-form
+    display: flex
+    align-items: center
+    max-width: 1140px
+    padding: 8px
+    margin: 0 auto
+    border-radius: 12px
+    background: #fff
+    @media ( max-width: 767px )
+        flex-direction: column
+        max-width: 400px
+    &__button
+        width: 60px
+        height: 60px
+        flex: 0 0 60px
+        @media ( max-width: 767px )
+            width: auto
+            padding: 0 18px
+            margin-top: 10px
+        &::before
+            background-image: url('../icons/search.svg')
+        span
+            display: none
+            margin-left: 8px
+            @media ( max-width: 767px )
+                display: inline
+    &__input
+        flex: 1 1 auto
+        margin: 1px   
+        @media ( max-width: 767px )
+            width: 100%
+            border-radius: 0
+            border-bottom: 1px solid #000
+        &_location::before
+            background-image: url('../icons/location.svg')
+        &_activity::before
+            background-image: url('../icons/activity.svg')
+        &_when::before
+            background-image: url('../icons/when.svg')
+        &_guests::before
+            background-image: url('../icons/guests.svg')
+                
+

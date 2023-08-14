@@ -1,0 +1,21 @@
+.button
+    border-radius: 12px
+    background: #7B61FF
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    font-size: 18px
+    line-height: 1.33
+    color: #fff
+    transition: 0.2s
+    @media ( min-width: 1200px )   
+        &:hover
+            background: #6647ff
+            cursor: pointer
+    &::before
+        content: ""
+        width: 24px
+        height: 24px
+        background-position: center
+        background-repeat: no-repeat
+        //background-image: url('../icons/globe.svg')

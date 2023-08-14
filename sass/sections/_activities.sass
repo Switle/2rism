@@ -1,0 +1,29 @@
+.activities
+    padding-top: 120px
+    @media( max-width: 991px )
+        padding-top: 60px
+    &__header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 64px
+        flex-wrap: wrap
+    &__cards
+        display: flex
+        justify-content: center
+        margin: -16px
+        @media ( max-width: 1199px )
+            flex-wrap: wrap
+
+.card-activities
+    box-sizing: content-box
+    max-width: 320px
+    padding: 16px
+    &__img
+        margin-bottom: 16px
+        border-radius: 12px
+        overflow: hidden
+        img
+            width: 100%
+    &__title
+        font-weight: 500

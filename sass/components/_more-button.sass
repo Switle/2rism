@@ -1,0 +1,20 @@
+.more-button
+    min-height: 44px
+    padding: 10px
+    border-radius: 12px
+    background: #F6F4FF
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #5243C2
+    transition: 0.2s
+    @media ( min-width: 1200px ) 
+        &:hover
+            background: #edebf7
+            cursor: pointer
+    &::after
+        content: ""
+        width: 20px
+        height: 20px
+        margin-left: 4px
+        background: url('../icons/arrow-right.svg') center no-repeat
